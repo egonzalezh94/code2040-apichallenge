@@ -1,0 +1,8 @@
+23:55:47:284 [debug] testApacheHttpClient.java:51 main: Word needed to reverse: v5E2R
+23:55:47:284 [debug] testApacheHttpClient.java:51 main: Word needed to reverse: v5E2R
+23:55:47:286 [debug] testApacheHttpClient.java:90 main: {"token":"uYBuUp3d6Z", "string": "R2E5v"}
+23:55:47:286 [debug] testApacheHttpClient.java:90 main: {"token":"uYBuUp3d6Z", "string": "R2E5v"}
+23:55:48:363 [debug] testApacheHttpClient.java:103 main: result after validation{"result":"PASS: stage1. Enrollment record updated!"}
+23:55:48:363 [debug] testApacheHttpClient.java:103 main: result after validation{"result":"PASS: stage1. Enrollment record updated!"}
+23:55:48:364 [debug] testApacheHttpClient.java:58 main: Reversed word:R2E5v
+23:55:48:364 [debug] testApacheHttpClient.java:58 main: Reversed word:R2E5v
