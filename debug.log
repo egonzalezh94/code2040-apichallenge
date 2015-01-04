@@ -1,8 +1,8 @@
-23:55:47:284 [debug] testApacheHttpClient.java:51 main: Word needed to reverse: v5E2R
-23:55:47:284 [debug] testApacheHttpClient.java:51 main: Word needed to reverse: v5E2R
-23:55:47:286 [debug] testApacheHttpClient.java:90 main: {"token":"uYBuUp3d6Z", "string": "R2E5v"}
-23:55:47:286 [debug] testApacheHttpClient.java:90 main: {"token":"uYBuUp3d6Z", "string": "R2E5v"}
-23:55:48:363 [debug] testApacheHttpClient.java:103 main: result after validation{"result":"PASS: stage1. Enrollment record updated!"}
-23:55:48:363 [debug] testApacheHttpClient.java:103 main: result after validation{"result":"PASS: stage1. Enrollment record updated!"}
-23:55:48:364 [debug] testApacheHttpClient.java:58 main: Reversed word:R2E5v
-23:55:48:364 [debug] testApacheHttpClient.java:58 main: Reversed word:R2E5v
+17:13:29:350 [debug] testApacheHttpClient.java:58 main: {"result":{"haystack":["46ZuD","fJQzi","KnnU4","4CHEG","BxfcK","E8H1B","JdSB3","TRWNq","BAyty","bd4I5","bjQAf","IjusZ","cs5kO","f1FM9","DVg9R","t6PJT","DlQCb","2UZsd","c15Et","8dYGY"]}}
+17:13:29:350 [debug] testApacheHttpClient.java:58 main: {"result":{"haystack":["46ZuD","fJQzi","KnnU4","4CHEG","BxfcK","E8H1B","JdSB3","TRWNq","BAyty","bd4I5","bjQAf","IjusZ","cs5kO","f1FM9","DVg9R","t6PJT","DlQCb","2UZsd","c15Et","8dYGY"]}}
+17:13:29:353 [debug] testApacheHttpClient.java:60 main: Word needed to reverse: {"haystack":["46ZuD","fJQzi","KnnU4","4CHEG","BxfcK","E8H1B","JdSB3","TRWNq","BAyty","bd4I5","bjQAf","IjusZ","cs5kO","f1FM9","DVg9R","t6PJT","DlQCb","2UZsd","c15Et","8dYGY"]}
+17:13:29:353 [debug] testApacheHttpClient.java:60 main: Word needed to reverse: {"haystack":["46ZuD","fJQzi","KnnU4","4CHEG","BxfcK","E8H1B","JdSB3","TRWNq","BAyty","bd4I5","bjQAf","IjusZ","cs5kO","f1FM9","DVg9R","t6PJT","DlQCb","2UZsd","c15Et","8dYGY"]}
+17:13:29:353 [debug] testApacheHttpClient.java:70 main: class org.json.simple.JSONObject
+17:13:29:353 [debug] testApacheHttpClient.java:70 main: class org.json.simple.JSONObject
+17:13:29:353 [debug] testApacheHttpClient.java:79 main: Reversed word:null
+17:13:29:353 [debug] testApacheHttpClient.java:79 main: Reversed word:null
