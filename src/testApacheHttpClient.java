@@ -43,6 +43,7 @@ public class testApacheHttpClient {
     }
 
     @SuppressWarnings("unchecked")
+    // TODO: Check the warnings and way to avoid this.
     public void doPost() {
         StringEntity se;
         HttpResponse response;
@@ -59,6 +60,7 @@ public class testApacheHttpClient {
                                                   // InputStream
             String line = null;
             String revWord = null;
+            //TODO: Localize all the instances of variables made.
             while ((line = reader.readLine()) != null) { // Go through stream
                                                          // until null
 
@@ -131,6 +133,7 @@ public class testApacheHttpClient {
                             logger.debug(df.getTimeZone());
                             df.setTimeZone(TimeZone.getTimeZone("GMT"));
                             logger.debug(df.getTimeZone());
+                            //TODO: Delete try catch and add exceptions to big try
                             try {
                                 long date = df.parse(time).getTime()/1000;
                                 String datetime = df.parse(time).toString();
@@ -183,6 +186,7 @@ public class testApacheHttpClient {
         StringEntity entity;
         HttpResponse response;
         try {
+            //TODO: Switch case to decide the name of dictionary key
             String jsonText = String.format(
                     "{\"token\":\"%s\", \"datestamp\": \"%s\"}", token, result); //Changed string to datestamp for ex 4
             logger.debug(jsonText);
@@ -216,6 +220,7 @@ public class testApacheHttpClient {
         StringEntity entity;
         HttpResponse response;
         try {
+            //TODO: Switch case to decide the name of dictionary key
             String jsonText = String.format(
                     "{\"token\":\"%s\", \"array\": %s}", token, result); //Changed string to array for ex 3
                                                                          //NOTE: format string doesnt contain quotes for sending jsonarray value
