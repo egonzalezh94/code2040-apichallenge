@@ -1,8 +1,56 @@
-17:13:29:350 [debug] testApacheHttpClient.java:58 main: {"result":{"haystack":["46ZuD","fJQzi","KnnU4","4CHEG","BxfcK","E8H1B","JdSB3","TRWNq","BAyty","bd4I5","bjQAf","IjusZ","cs5kO","f1FM9","DVg9R","t6PJT","DlQCb","2UZsd","c15Et","8dYGY"]}}
-17:13:29:350 [debug] testApacheHttpClient.java:58 main: {"result":{"haystack":["46ZuD","fJQzi","KnnU4","4CHEG","BxfcK","E8H1B","JdSB3","TRWNq","BAyty","bd4I5","bjQAf","IjusZ","cs5kO","f1FM9","DVg9R","t6PJT","DlQCb","2UZsd","c15Et","8dYGY"]}}
-17:13:29:353 [debug] testApacheHttpClient.java:60 main: Word needed to reverse: {"haystack":["46ZuD","fJQzi","KnnU4","4CHEG","BxfcK","E8H1B","JdSB3","TRWNq","BAyty","bd4I5","bjQAf","IjusZ","cs5kO","f1FM9","DVg9R","t6PJT","DlQCb","2UZsd","c15Et","8dYGY"]}
-17:13:29:353 [debug] testApacheHttpClient.java:60 main: Word needed to reverse: {"haystack":["46ZuD","fJQzi","KnnU4","4CHEG","BxfcK","E8H1B","JdSB3","TRWNq","BAyty","bd4I5","bjQAf","IjusZ","cs5kO","f1FM9","DVg9R","t6PJT","DlQCb","2UZsd","c15Et","8dYGY"]}
-17:13:29:353 [debug] testApacheHttpClient.java:70 main: class org.json.simple.JSONObject
-17:13:29:353 [debug] testApacheHttpClient.java:70 main: class org.json.simple.JSONObject
-17:13:29:353 [debug] testApacheHttpClient.java:79 main: Reversed word:null
-17:13:29:353 [debug] testApacheHttpClient.java:79 main: Reversed word:null
+23:40:17:086 [debug] testApacheHttpClient.java:58 main: {"result":{"haystack":["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"],"needle":"bshNX"}}
+23:40:17:086 [debug] testApacheHttpClient.java:58 main: {"result":{"haystack":["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"],"needle":"bshNX"}}
+23:40:17:089 [debug] testApacheHttpClient.java:60 main: Word needed to reverse: {"haystack":["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"],"needle":"bshNX"}
+23:40:17:089 [debug] testApacheHttpClient.java:60 main: Word needed to reverse: {"haystack":["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"],"needle":"bshNX"}
+23:40:17:089 [debug] testApacheHttpClient.java:72 main: class org.json.simple.JSONObject
+23:40:17:089 [debug] testApacheHttpClient.java:72 main: class org.json.simple.JSONObject
+23:40:17:089 [debug] testApacheHttpClient.java:75 main: needle: bshNX
+23:40:17:089 [debug] testApacheHttpClient.java:75 main: needle: bshNX
+23:40:17:089 [debug] testApacheHttpClient.java:76 main: haystack: ["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"]
+23:40:17:089 [debug] testApacheHttpClient.java:76 main: haystack: ["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"]
+23:40:17:090 [debug] testApacheHttpClient.java:81 main: 8qJDY
+23:40:17:090 [debug] testApacheHttpClient.java:81 main: 8qJDY
+23:40:17:090 [debug] testApacheHttpClient.java:81 main: 67UAA
+23:40:17:090 [debug] testApacheHttpClient.java:81 main: 67UAA
+23:40:17:090 [debug] testApacheHttpClient.java:81 main: o0vdK
+23:40:17:090 [debug] testApacheHttpClient.java:81 main: o0vdK
+23:40:17:090 [debug] testApacheHttpClient.java:81 main: 11KJh
+23:40:17:090 [debug] testApacheHttpClient.java:81 main: 11KJh
+23:40:17:090 [debug] testApacheHttpClient.java:81 main: 0HHBv
+23:40:17:090 [debug] testApacheHttpClient.java:81 main: 0HHBv
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: sn12V
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: sn12V
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: 6slqK
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: 6slqK
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: da1Zq
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: da1Zq
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: 9IMn0
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: 9IMn0
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: bshNX
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: bshNX
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: j0UiG
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: j0UiG
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: b7zgG
+23:40:17:091 [debug] testApacheHttpClient.java:81 main: b7zgG
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: oIUwp
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: oIUwp
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: 70dBm
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: 70dBm
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: WLR2g
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: WLR2g
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: AwYwE
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: AwYwE
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: MxaOp
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: MxaOp
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: HC6jF
+23:40:17:092 [debug] testApacheHttpClient.java:81 main: HC6jF
+23:40:17:093 [debug] testApacheHttpClient.java:81 main: Ml1Mv
+23:40:17:093 [debug] testApacheHttpClient.java:81 main: Ml1Mv
+23:40:17:093 [debug] testApacheHttpClient.java:81 main: VA8HX
+23:40:17:093 [debug] testApacheHttpClient.java:81 main: VA8HX
+23:40:17:093 [debug] testApacheHttpClient.java:124 main: {"token":"uYBuUp3d6Z", "needle": "9"}
+23:40:17:093 [debug] testApacheHttpClient.java:124 main: {"token":"uYBuUp3d6Z", "needle": "9"}
+23:40:18:679 [debug] testApacheHttpClient.java:137 main: result after validation{"result":"PASS: stage2. Enrollment record updated!"}
+23:40:18:679 [debug] testApacheHttpClient.java:137 main: result after validation{"result":"PASS: stage2. Enrollment record updated!"}
+23:40:18:680 [debug] testApacheHttpClient.java:94 main: Reversed word:null
+23:40:18:680 [debug] testApacheHttpClient.java:94 main: Reversed word:null

@@ -65,9 +65,24 @@ public class testApacheHttpClient {
                             validateResult("uYBuUp3d6Z", revWord);
                             break;
                         case "haystack":
-                            Object haystackDict = jsonObject.get("result");
+                            int match = -1;
+                            String haystackDict = jsonObject.get("result").toString();
+                            JSONObject haystackObject = (JSONObject) parser.parse(haystackDict);
                             //JSONArray arr = (JSONArray) haystackDict;
-                            logger.debug(haystackDict.getClass());
+                            logger.debug(haystackObject.getClass());
+                            String needle = (String) haystackObject.get("needle");
+                            JSONArray haystack = (JSONArray) haystackObject.get("haystack");
+                            logger.debug("needle: " + needle);
+                            logger.debug("haystack: " + haystack.toString());
+                            for (int i=0; i<haystack.size(); i++){
+                                if (haystack.get(i).toString().equals(needle)) {
+                                    match = i;
+                                }
+                                logger.debug(haystack.get(i).toString());
+                            }
+                            if (match != -1) {
+                                validateResult("uYBuUp3d6Z", String.valueOf(match));
+                            }
 //                            Map<String,String> mapHaystack = (Map<String, String>) haystackDict;
 //                            logger.debug(mapHaystack.get("haystack").getClass());
                             
@@ -105,7 +120,7 @@ public class testApacheHttpClient {
         HttpResponse response;
         try {
             String jsonText = String.format(
-                    "{\"token\":\"%s\", \"string\": \"%s\"}", token, result);
+                    "{\"token\":\"%s\", \"needle\": \"%s\"}", token, result); //Changed string to needle for ex 2
             logger.debug(jsonText);
             entity = new StringEntity(jsonText);
             validatePost.setEntity(entity);
