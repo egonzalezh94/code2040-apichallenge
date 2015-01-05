@@ -1,56 +1,28 @@
-23:40:17:086 [debug] testApacheHttpClient.java:58 main: {"result":{"haystack":["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"],"needle":"bshNX"}}
-23:40:17:086 [debug] testApacheHttpClient.java:58 main: {"result":{"haystack":["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"],"needle":"bshNX"}}
-23:40:17:089 [debug] testApacheHttpClient.java:60 main: Word needed to reverse: {"haystack":["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"],"needle":"bshNX"}
-23:40:17:089 [debug] testApacheHttpClient.java:60 main: Word needed to reverse: {"haystack":["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"],"needle":"bshNX"}
-23:40:17:089 [debug] testApacheHttpClient.java:72 main: class org.json.simple.JSONObject
-23:40:17:089 [debug] testApacheHttpClient.java:72 main: class org.json.simple.JSONObject
-23:40:17:089 [debug] testApacheHttpClient.java:75 main: needle: bshNX
-23:40:17:089 [debug] testApacheHttpClient.java:75 main: needle: bshNX
-23:40:17:089 [debug] testApacheHttpClient.java:76 main: haystack: ["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"]
-23:40:17:089 [debug] testApacheHttpClient.java:76 main: haystack: ["8qJDY","67UAA","o0vdK","11KJh","0HHBv","sn12V","6slqK","da1Zq","9IMn0","bshNX","j0UiG","b7zgG","oIUwp","70dBm","WLR2g","AwYwE","MxaOp","HC6jF","Ml1Mv","VA8HX"]
-23:40:17:090 [debug] testApacheHttpClient.java:81 main: 8qJDY
-23:40:17:090 [debug] testApacheHttpClient.java:81 main: 8qJDY
-23:40:17:090 [debug] testApacheHttpClient.java:81 main: 67UAA
-23:40:17:090 [debug] testApacheHttpClient.java:81 main: 67UAA
-23:40:17:090 [debug] testApacheHttpClient.java:81 main: o0vdK
-23:40:17:090 [debug] testApacheHttpClient.java:81 main: o0vdK
-23:40:17:090 [debug] testApacheHttpClient.java:81 main: 11KJh
-23:40:17:090 [debug] testApacheHttpClient.java:81 main: 11KJh
-23:40:17:090 [debug] testApacheHttpClient.java:81 main: 0HHBv
-23:40:17:090 [debug] testApacheHttpClient.java:81 main: 0HHBv
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: sn12V
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: sn12V
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: 6slqK
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: 6slqK
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: da1Zq
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: da1Zq
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: 9IMn0
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: 9IMn0
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: bshNX
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: bshNX
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: j0UiG
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: j0UiG
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: b7zgG
-23:40:17:091 [debug] testApacheHttpClient.java:81 main: b7zgG
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: oIUwp
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: oIUwp
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: 70dBm
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: 70dBm
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: WLR2g
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: WLR2g
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: AwYwE
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: AwYwE
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: MxaOp
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: MxaOp
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: HC6jF
-23:40:17:092 [debug] testApacheHttpClient.java:81 main: HC6jF
-23:40:17:093 [debug] testApacheHttpClient.java:81 main: Ml1Mv
-23:40:17:093 [debug] testApacheHttpClient.java:81 main: Ml1Mv
-23:40:17:093 [debug] testApacheHttpClient.java:81 main: VA8HX
-23:40:17:093 [debug] testApacheHttpClient.java:81 main: VA8HX
-23:40:17:093 [debug] testApacheHttpClient.java:124 main: {"token":"uYBuUp3d6Z", "needle": "9"}
-23:40:17:093 [debug] testApacheHttpClient.java:124 main: {"token":"uYBuUp3d6Z", "needle": "9"}
-23:40:18:679 [debug] testApacheHttpClient.java:137 main: result after validation{"result":"PASS: stage2. Enrollment record updated!"}
-23:40:18:679 [debug] testApacheHttpClient.java:137 main: result after validation{"result":"PASS: stage2. Enrollment record updated!"}
-23:40:18:680 [debug] testApacheHttpClient.java:94 main: Reversed word:null
-23:40:18:680 [debug] testApacheHttpClient.java:94 main: Reversed word:null
+01:47:32:187 [debug] testApacheHttpClient.java:66 main: {"result":{"datestamp":"2002-08-15T12:50:00.000Z","interval":186853346}}
+01:47:32:187 [debug] testApacheHttpClient.java:66 main: {"result":{"datestamp":"2002-08-15T12:50:00.000Z","interval":186853346}}
+01:47:32:189 [debug] testApacheHttpClient.java:68 main: Word needed to reverse: {"datestamp":"2002-08-15T12:50:00.000Z","interval":186853346}
+01:47:32:189 [debug] testApacheHttpClient.java:68 main: Word needed to reverse: {"datestamp":"2002-08-15T12:50:00.000Z","interval":186853346}
+01:47:32:189 [debug] testApacheHttpClient.java:127 main: 2002-08-15T12:50:00.000Z
+01:47:32:189 [debug] testApacheHttpClient.java:127 main: 2002-08-15T12:50:00.000Z
+01:47:32:189 [debug] testApacheHttpClient.java:131 main: sun.util.calendar.ZoneInfo[id="America/Mazatlan",offset=-25200000,dstSavings=3600000,useDaylight=true,transitions=94,lastRule=java.util.SimpleTimeZone[id=America/Mazatlan,offset=-25200000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=3,startDay=1,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]
+01:47:32:189 [debug] testApacheHttpClient.java:131 main: sun.util.calendar.ZoneInfo[id="America/Mazatlan",offset=-25200000,dstSavings=3600000,useDaylight=true,transitions=94,lastRule=java.util.SimpleTimeZone[id=America/Mazatlan,offset=-25200000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=3,startMonth=3,startDay=1,startDayOfWeek=1,startTime=7200000,startTimeMode=0,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=7200000,endTimeMode=0]]
+01:47:32:190 [debug] testApacheHttpClient.java:133 main: sun.util.calendar.ZoneInfo[id="GMT",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+01:47:32:190 [debug] testApacheHttpClient.java:133 main: sun.util.calendar.ZoneInfo[id="GMT",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+01:47:32:193 [debug] testApacheHttpClient.java:137 main: sun.util.calendar.ZoneInfo[id="GMT",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+01:47:32:193 [debug] testApacheHttpClient.java:137 main: sun.util.calendar.ZoneInfo[id="GMT",offset=0,dstSavings=0,useDaylight=false,transitions=0,lastRule=null]
+01:47:32:194 [debug] testApacheHttpClient.java:138 main: Thu Aug 15 06:50:00 MDT 2002
+01:47:32:194 [debug] testApacheHttpClient.java:138 main: Thu Aug 15 06:50:00 MDT 2002
+01:47:32:194 [debug] testApacheHttpClient.java:139 main: old date:1029415800
+01:47:32:194 [debug] testApacheHttpClient.java:139 main: old date:1029415800
+01:47:32:194 [debug] testApacheHttpClient.java:141 main: 1216269146
+01:47:32:194 [debug] testApacheHttpClient.java:141 main: 1216269146
+01:47:32:194 [debug] testApacheHttpClient.java:144 main: Wed Jan 14 18:51:09 MST 1970
+01:47:32:194 [debug] testApacheHttpClient.java:144 main: Wed Jan 14 18:51:09 MST 1970
+01:47:32:195 [debug] testApacheHttpClient.java:146 main: 2008-07-17T04:32:26.000Z
+01:47:32:195 [debug] testApacheHttpClient.java:146 main: 2008-07-17T04:32:26.000Z
+01:47:32:195 [debug] testApacheHttpClient.java:188 main: {"token":"uYBuUp3d6Z", "datestamp": "2008-07-17T04:32:26.000Z"}
+01:47:32:195 [debug] testApacheHttpClient.java:188 main: {"token":"uYBuUp3d6Z", "datestamp": "2008-07-17T04:32:26.000Z"}
+01:47:33:498 [debug] testApacheHttpClient.java:201 main: result after validation{"result":"PASS: stage4. Enrollment record updated!"}
+01:47:33:498 [debug] testApacheHttpClient.java:201 main: result after validation{"result":"PASS: stage4. Enrollment record updated!"}
+01:47:33:498 [debug] testApacheHttpClient.java:154 main: {"datestamp":"2002-08-15T12:50:00.000Z","interval":186853346}
+01:47:33:498 [debug] testApacheHttpClient.java:154 main: {"datestamp":"2002-08-15T12:50:00.000Z","interval":186853346}

@@ -4,7 +4,14 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import java.util.Map;
+import java.util.TimeZone;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -35,6 +42,7 @@ public class testApacheHttpClient {
 
     }
 
+    @SuppressWarnings("unchecked")
     public void doPost() {
         StringEntity se;
         HttpResponse response;
@@ -87,11 +95,67 @@ public class testApacheHttpClient {
 //                            logger.debug(mapHaystack.get("haystack").getClass());
                             
                             break;
+                        case "prefix":
+                            JSONArray newJsonArr = new JSONArray();
+                            String prefixDict = jsonObject.get("result").toString();
+                            JSONObject prefixObject = (JSONObject) parser.parse(prefixDict);
+                            //JSONArray arr = (JSONArray) haystackDict;
+                            logger.debug(prefixObject.getClass());
+                            String prefix = (String) prefixObject.get("prefix");
+                            JSONArray wordArray = (JSONArray) prefixObject.get("array");
+                            ArrayList<String> newArray = new ArrayList<String>();
+                            logger.debug("prefix: " + prefix);
+                            logger.debug("array: " + wordArray.toString());
+                            for (int i=0; i<wordArray.size(); i++){
+                                logger.debug(wordArray.get(i).toString());
+                                if (!wordArray.get(i).toString().startsWith(prefix)) {
+                                    newArray.add(wordArray.get(i).toString());
+                                }
+
+                            }
+                            newJsonArr.addAll(newArray);
+                            
+                            validateResult("uYBuUp3d6Z", newJsonArr);
+
+                            
+                            break;
+                            
+                        case "time":
+                            String timeDict = jsonObject.get("result").toString();
+                            JSONObject timeObject = (JSONObject) parser.parse(timeDict);
+                            String time = timeObject.get("datestamp").toString();
+                            logger.debug(time);
+                            String interval = timeObject.get("interval").toString();
+                            // http://stackoverflow.com/questions/19714018/iso-8601-date-format-to-unix-time-in-java
+                            DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+                            logger.debug(df.getTimeZone());
+                            df.setTimeZone(TimeZone.getTimeZone("GMT"));
+                            logger.debug(df.getTimeZone());
+                            try {
+                                long date = df.parse(time).getTime()/1000;
+                                String datetime = df.parse(time).toString();
+                                logger.debug(df.getTimeZone());
+                                logger.debug(datetime);
+                                logger.debug("old date:" + date);
+                                date = date + Integer.parseInt(interval);
+                                logger.debug(date);
+                                DateFormat df2 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+                                df2.setTimeZone(TimeZone.getTimeZone("GMT"));
+                                logger.debug(new Date(date));
+                                String finalTime = df2.format(new Date(date*1000));
+                                logger.debug(finalTime);
+                                validateResult("uYBuUp3d6Z", finalTime);
+                            } catch (java.text.ParseException e) {
+                                logger.debug(e);
+                            }
+
+                            
+                            
+                            logger.debug(timeDict);
+                            break;
                     }
                 }
             }
-            // Send result as JSON
-            logger.debug("Reversed word:" + revWord);
 
         } catch (UnsupportedEncodingException e) {
             logger.debug(e);
@@ -120,7 +184,41 @@ public class testApacheHttpClient {
         HttpResponse response;
         try {
             String jsonText = String.format(
-                    "{\"token\":\"%s\", \"needle\": \"%s\"}", token, result); //Changed string to needle for ex 2
+                    "{\"token\":\"%s\", \"datestamp\": \"%s\"}", token, result); //Changed string to datestamp for ex 4
+            logger.debug(jsonText);
+            entity = new StringEntity(jsonText);
+            validatePost.setEntity(entity);
+            response = client.execute(validatePost);
+            InputStream stream = response.getEntity().getContent();
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(
+                    stream));
+            String line = null;
+
+            while ((line = reader.readLine()) != null) { // Go through stream
+                                                         // until null
+
+                logger.debug("result after validation" + line);
+
+            }
+
+        } catch (UnsupportedEncodingException e) {
+            logger.debug(e);
+        } catch (ClientProtocolException e) {
+            logger.debug(e);
+        } catch (IOException e) {
+            logger.debug(e);
+        }
+
+    }
+    
+    public void validateResult(String token, JSONArray result) {
+        StringEntity entity;
+        HttpResponse response;
+        try {
+            String jsonText = String.format(
+                    "{\"token\":\"%s\", \"array\": %s}", token, result); //Changed string to array for ex 3
+                                                                         //NOTE: format string doesnt contain quotes for sending jsonarray value
             logger.debug(jsonText);
             entity = new StringEntity(jsonText);
             validatePost.setEntity(entity);
@@ -150,8 +248,8 @@ public class testApacheHttpClient {
 
     public static void main(String[] args) {
         testApacheHttpClient test = new testApacheHttpClient(
-                "http://challenge.code2040.org/api/haystack",
-                "http://challenge.code2040.org/api/validateneedle", "haystack");
+                "http://challenge.code2040.org/api/time",
+                "http://challenge.code2040.org/api/validatetime", "time");
         test.doPost();
     }
 
